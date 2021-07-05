@@ -1,0 +1,165 @@
+/*General*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Karla", sans-serif;
+
+  align-items: center;
+}
+
+.card-container {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+/*Text*/
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  color: hsl(71, 73%, 54%);
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+}
+
+span {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/**Cards**/
+
+div.card {
+  padding: 2rem;
+}
+
+/*Top Card*/
+
+div.top-card {
+  background-color: #fff;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+div.top-card h2 {
+  color: hsl(179, 62%, 43%);
+}
+
+div.top-card h3 {
+  margin: 1rem 0;
+}
+
+div.top-card p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.4rem;
+}
+
+/*Second Card*/
+
+div.flex-container > div.card:first-child {
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+}
+
+div.flex-container > div.card:first-child > p:first-of-type {
+  color: hsla(203, 44%, 93%, 0.774);
+  margin: 1rem 0;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  filter: drop-shadow(0 0.5rem 0.5rem hsla(227, 43%, 21%, 0.226));
+  font-weight: 700;
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8rem;
+}
+
+/*Third Card*/
+
+div.flex-container > div.card:last-child {
+  background-color: hsl(179, 61%, 47%);
+  border-radius: 0 0 0.3rem 0.3rem;
+  color: #fff;
+}
+
+div.flex-container > div.card:last-child h2 {
+  margin-bottom: 1.2rem;
+}
+
+ul li {
+  color: hsla(203, 44%, 93%, 0.774);
+  list-style: none;
+  margin-bottom: 0.2rem;
+}
+
+/*Footer*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 750px) {
+  body {
+    height: 100vh;
+  }
+
+  div.card-container {
+    width: 53%;
+  }
+
+  div.card {
+    padding: 2.5rem;
+  }
+
+  div.top-card p {
+    width: 90%;
+  }
+
+  div.flex-container {
+    display: flex;
+  }
+
+  div.flex-container > div.card {
+    width: 50%;
+  }
+
+  div.flex-container > div.card:first-of-type {
+    border-radius: 0 0 0 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div.flex-container > div.card:first-of-type h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  div.flex-container > div.card:last-child {
+    border-radius: 0 0 0.3rem 0;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
