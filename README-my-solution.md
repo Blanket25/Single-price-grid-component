@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Single price grid component](https://your-live-site-url.com)
+- Live Site URL: [Single price grid component](https://blanket25.github.io/Single-price-grid-component/)
 
 ## My process
 
